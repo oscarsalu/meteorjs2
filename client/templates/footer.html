@@ -1,0 +1,17 @@
+<template name="footer">
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+			{{#if currentUser}}
+			<li><a class="logout-user"><span class="label">Admin Logout</span></a></li>
+			{{else}}
+			<li><a href="/admin"><span class="label">Admin Login</span></a></li>
+			{{/if}}
+		</ul>
+		<ul class="copyright">
+					<li>&copy; OSK_programmers</li><li>Design: <a href="#">Salu</a></li>
+		</ul>
+	</footer>
+</template>

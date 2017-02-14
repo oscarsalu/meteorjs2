@@ -1,0 +1,66 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/kali/.meteor/packages/meteor-tool/.1.4.2_3.17tso1e++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/bin/node',
+1 verbose cli   '/home/kali/.meteor/packages/meteor-tool/.1.4.2_3.17tso1e++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'cordova' ]
+2 info using npm@3.10.9
+3 info using node@v4.6.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData cordova
+8 silly fetchNamedPackageData cordova
+9 silly mapToRegistry name cordova
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'cordova',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'cordova',
+12 silly mapToRegistry   name: 'cordova',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/cordova
+14 verbose request uri https://registry.npmjs.org/cordova
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 7:14:50 AM
+17 verbose request id 5be82cdce8630617
+18 http request GET https://registry.npmjs.org/cordova
+19 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+20 info attempt registry request try #2 at 7:15:20 AM
+21 http request GET https://registry.npmjs.org/cordova
+22 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+23 info attempt registry request try #3 at 7:16:40 AM
+24 http request GET https://registry.npmjs.org/cordova
+25 silly fetchPackageMetaData Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+25 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:911:11)
+25 silly fetchPackageMetaData     at errnoException (dns.js:32:15)
+25 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:78:26)
+25 silly fetchPackageMetaData  error for cordova { [Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443]
+25 silly fetchPackageMetaData   code: 'EAI_AGAIN',
+25 silly fetchPackageMetaData   errno: 'EAI_AGAIN',
+25 silly fetchPackageMetaData   syscall: 'getaddrinfo',
+25 silly fetchPackageMetaData   hostname: 'registry.npmjs.org',
+25 silly fetchPackageMetaData   host: 'registry.npmjs.org',
+25 silly fetchPackageMetaData   port: 443 }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+30 verbose stack     at Object.exports._errnoException (util.js:911:11)
+30 verbose stack     at errnoException (dns.js:32:15)
+30 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:78:26)
+31 verbose cwd /home/kali/project/blog
+32 error Linux 4.4.0-59-generic
+33 error argv "/home/kali/.meteor/packages/meteor-tool/.1.4.2_3.17tso1e++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/bin/node" "/home/kali/.meteor/packages/meteor-tool/.1.4.2_3.17tso1e++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/bin/npm" "install" "cordova"
+34 error node v4.6.2
+35 error npm  v3.10.9
+36 error code EAI_AGAIN
+37 error errno EAI_AGAIN
+38 error syscall getaddrinfo
+39 error getaddrinfo EAI_AGAIN registry.npmjs.org:443
+40 error If you need help, you may report this error at:
+40 error     <https://github.com/npm/npm/issues>
+41 verbose exit [ 1, true ]

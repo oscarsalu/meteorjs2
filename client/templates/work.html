@@ -1,0 +1,16 @@
+<template name="work">
+	<!-- +++++ Projects Section +++++ -->
+	<section id="two">
+		<div class="row mt centered">
+		{{#each projects}}	
+			<article class="6u 12u$(xsmall) work-item">
+				<a class="image fit thumb" href="/project/{{_id}}"><img class="img-responsive" src="{{projectImage}}" alt="" /></a>
+				<p>{{name}}</p>
+			</article>
+			{{else}}
+			<p>No projects at the moment please come back another time</p>
+
+			{{/each}}
+		</div><!-- /row -->
+	</section>
+</template>
